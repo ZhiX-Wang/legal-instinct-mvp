@@ -3,3 +3,21 @@
 @media(max-width:1020px){.hero{grid-template-columns:1fr 1fr}.hero-copy{padding-top:75px}.hero h1{font-size:clamp(43px,5vw,60px)}.hero-scene{min-height:570px}.play-grid{gap:50px;grid-template-columns:minmax(0,1fr) 240px}.header-edition{display:none}.header-line{display:none}}
 @media(max-width:760px){.site-header{height:70px;padding:0 20px}.header-status{font-size:11px}.brand{font-size:18px}.brand-mark{width:25px;height:25px}.brand-mark i{height:18px}.brand-mark i:nth-child(1){left:6px}.brand-mark i:nth-child(2){left:12px}.brand-mark i:nth-child(3){left:18px}.hero{display:block}.hero-copy{padding:54px 22px 36px}.hero h1{font-size:clamp(39px,9vw,62px);white-space:normal}.hero-intro{font-size:14px;margin:25px 0}.hero-actions{align-items:flex-start;flex-direction:column;gap:13px}.hero-rule{margin-top:48px;gap:12px;flex-wrap:wrap}.hero-scene{min-height:420px;padding:22px}.scene-visual{height:170px}.scene-visual>span{font-size:55px}.scene-ring{width:210px;height:210px}.ring-two{width:310px;height:310px}.scene-bottom h2{font-size:32px}.catalog{padding:75px 22px}.catalog-heading{display:block}.catalog-heading>p{margin-top:18px}.scene-row{grid-template-columns:42px 1fr 22px;gap:8px;padding:20px 3px}.row-main strong{font-size:21px}.row-meta{display:none}.how-it-works{display:block;padding:65px 22px}.how-content{margin-top:36px}.how-columns{gap:20px}.site-footer{display:block;padding:24px 22px}.site-footer p{text-align:left;margin-top:12px}.play-page{padding:0 22px 70px}.play-top{padding:23px 0}.play-grid{display:block;padding-top:46px}.play-main h1{font-size:40px}.story{font-size:15px;margin-bottom:36px}.decision h2{font-size:25px}.option{font-size:14px;padding:17px 2px;grid-template-columns:30px 1fr 20px}.play-side{margin-top:60px;border-top:1px solid var(--line);padding-top:25px}.consequence-box{padding:20px}.consequence-box p{font-size:21px}.recap-grid{grid-template-columns:1fr}.takeaway p{font-size:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+.photo{display:block;aspect-ratio:1;background-repeat:no-repeat;background-size:300% 300%;background-color:#d9e1e0;overflow:hidden;flex:none}
+.scene-visual{height:370px;display:flex;align-items:center;justify-content:center}
+.scene-visual>.hero-photo{width:min(86%,350px);border:1px solid #95aeb688;box-shadow:16px 16px 0 #0c192b}
+.scene-visual>.scene-time{position:absolute;z-index:2;left:50%;bottom:12px;transform:translateX(-50%);font-family:Georgia,serif;font-size:25px;letter-spacing:.04em;color:var(--ink);background:var(--gold);padding:8px 15px;box-shadow:6px 6px 0 #0c192b}
+.scene-row{grid-template-columns:52px 76px 1fr 150px 30px}
+.row-photo{width:72px;border:1px solid var(--line)}
+.intro-grid{display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:35px;align-items:start}
+.intro-photo{width:235px;border:1px solid var(--line);box-shadow:9px 9px 0 #dfe8e7}
+.intro-grid .story{margin-bottom:38px}
+.option{grid-template-columns:92px 28px 1fr 24px;padding:12px 4px;gap:14px;min-height:111px}
+.option-photo{width:92px;border:1px solid #c9d6d5}
+.option:hover .option-photo,.scene-row:hover .row-photo{filter:contrast(1.06)}
+.result-photo{width:min(100%,310px);margin:5px 0 22px;border:1px solid var(--line)}
+.timeline>div{grid-template-columns:76px 36px 1fr;gap:0 14px}
+.timeline-photo{grid-row:span 2;width:72px}
+.timeline span:not(.photo){grid-row:span 2}
+@media(max-width:1020px){.intro-grid{grid-template-columns:minmax(0,1fr) 190px;gap:24px}.intro-photo{width:190px}}
+@media(max-width:760px){.scene-visual{height:235px}.scene-visual>.hero-photo{width:205px;box-shadow:9px 9px 0 #0c192b}.scene-visual>.scene-time{font-size:19px;bottom:1px}.scene-row{grid-template-columns:34px 58px 1fr 16px;gap:8px}.row-photo{width:56px}.row-main strong{font-size:19px}.intro-grid{display:block}.intro-photo{width:min(100%,320px);margin:0 0 34px}.option{grid-template-columns:66px 19px 1fr 16px;gap:8px;min-height:82px;padding:9px 2px}.option-photo{width:66px}.option-key{font-size:12px}.result-photo{width:min(100%,270px)}.timeline>div{grid-template-columns:60px 24px 1fr;gap:0 8px}.timeline-photo{width:56px}.timeline strong{font-size:13px}}
