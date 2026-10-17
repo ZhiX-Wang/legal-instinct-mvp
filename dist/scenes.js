@@ -1,6 +1,6 @@
 window.LEGAL_SCENES = [
   {
-    id: "restaurant", number: "001", category: "人身安全", title: "餐厅里，陌生人打了你一拳", time: "约 3 分钟", place: "中国大陆", temperature: "紧急",
+    id: "restaurant", number: "001", category: "人身安全", title: "餐厅里，陌生人打了你一拳", time: "约 5 分钟", place: "中国大陆", temperature: "紧急",
     opening: "晚上 9:30。你和朋友在餐厅吃饭，因为过道拥挤与邻桌发生口角。对方突然冲过来打了你一拳。你还站着，对方离你不到一米，也没有离开。",
     first: { prompt: "接下来的几秒，你会怎么做？", options: [
       { id: "distance", text: "护住头部，拉开距离，呼叫现场人员帮忙", consequence: "你退到桌椅外侧。朋友和服务员开始注意到冲突，对方仍在叫嚷，但你获得了观察其下一步动作的空间。", gained: ["先控制受伤风险", "让现场人员成为潜在见证人"], missed: [] },
@@ -15,10 +15,10 @@ window.LEGAL_SCENES = [
     ]},
     takeaway: "判断防卫行为，要看当时是否存在正在进行或现实紧迫的不法侵害，以及行为是否为了制止侵害、是否明显超过必要限度。先保护自己，再完整记录事实。",
     actions: ["与对方保持距离，必要时呼救和报警", "有伤情及时就医，留存病历与费用凭证", "尽快请求保存监控，记录现场证人和时间地点"],
-    sources: [{label:"两高一部《关于依法适用正当防卫制度的指导意见》",url:"https://www.spp.gov.cn/xwfbh/wsfbt/202009/t20200903_478676.shtml"}]
+    sources: [{label:"两高一部《关于依法适用正当防卫制度的指导意见》",url:"https://www.spp.gov.cn/xwfbh/wsfbt/202009/t20200903_478676.shtml"},{label:"《治安管理处罚法》第 51 条",url:"https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2025/art_8a1c722747214869b28c0ad7a0f8bb7a.html"},{label:"《民法典》第 1179 条",url:"https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958939.html"}]
   },
   {
-    id: "helmet", number: "002", category: "行政处罚", title: "没戴头盔，被交警拦下", time: "约 3 分钟", place: "浙江省 · 电动自行车", temperature: "时间窗口",
+    id: "helmet", number: "002", category: "行政处罚", title: "没戴头盔，被交警拦下", time: "约 5 分钟", place: "浙江省 · 电动自行车", temperature: "时间窗口",
     opening: "你在浙江骑电动自行车，没戴安全头盔。交警示意你靠边，告知可能依法给予警告或者罚款。你以前只知道交罚款，从未留意过处罚决定上的内容。",
     first: { prompt: "现场你先做什么？", options: [
       { id: "ask", text: "配合停车，询问认定事实、依据和处理方式", consequence: "你确认执法人员认定的是电动自行车驾驶人未佩戴头盔，并听清拟作出的处理。争议点变得具体。", gained: ["核对车辆类型、违法事实和地方依据"], missed: [] },
@@ -36,7 +36,7 @@ window.LEGAL_SCENES = [
     sources: [{label:"《浙江省电动自行车管理条例》第 17、25 条",url:"https://zj.119.gov.cn/art/2025/2/25/art_1229747154_3469.html"},{label:"《中华人民共和国行政复议法》第 11、20、23 条",url:"https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_70518816df484be18f6b38fa295750bb.html"}]
   },
   {
-    id: "deposit", number: "003", category: "租房生活", title: "退租当天，房东说押金不退", time: "约 3 分钟", place: "中国大陆", temperature: "证据窗口",
+    id: "deposit", number: "003", category: "租房生活", title: "退租当天，房东说押金不退", time: "约 5 分钟", place: "中国大陆", temperature: "证据窗口",
     opening: "租期结束，你按约搬空房间。房东看了一眼墙面，说有磨损，押金一分不退。合同写着退房后结算押金，但没有约定正常使用痕迹可以全额扣除。",
     first: { prompt: "交钥匙前，你会怎么做？", options: [
       { id: "inspect", text: "拍摄房间、水电表与钥匙交接，请房东列明扣款项目", consequence: "房屋交付状态、表读数和争议项目都留下了记录。房东开始具体指出墙面一处划痕，你可以对照入住时的照片和合同。", gained: ["固定交房状态与费用读数", "要求说明具体扣款依据"], missed: [] },
@@ -54,7 +54,7 @@ window.LEGAL_SCENES = [
     sources: [{label:"最高人民法院租赁押金案例",url:"https://www.court.gov.cn/zixun/xiangqing/365881.html"},{label:"法院关于返还房屋证据的案例",url:"https://jiuquan.chinagscourt.gov.cn/Show/95000"}]
   },
   {
-    id: "resignation", number: "004", category: "职场劳动", title: "HR 让你签一份离职申请", time: "约 3 分钟", place: "中国大陆", temperature: "签字前",
+    id: "resignation", number: "004", category: "职场劳动", title: "HR 让你签一份离职申请", time: "约 5 分钟", place: "中国大陆", temperature: "签字前",
     opening: "周五下午，HR 把一份《个人离职申请》推到你面前，说‘只是走流程，签了很快给你办完’。你并没有主动提出离职，纸上却写着‘因个人原因自愿离职’。",
     first: { prompt: "此刻你怎么回应？", options: [
       { id: "clarify", text: "先不签，要求说明解除原因、提出方和书面方案", consequence: "HR 解释公司计划调整岗位，但尚未给你正式书面方案。你把‘谁提出解除’这个关键事实留在了桌面上。", gained: ["确认真实意思表示与提出解除的一方", "争取书面方案"], missed: [] },
@@ -72,7 +72,7 @@ window.LEGAL_SCENES = [
     sources: [{label:"《中华人民共和国劳动合同法》第 36、37、46、47 条",url:"https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"}]
   },
   {
-    id: "fakepolice", number: "005", category: "反诈骗", title: "来电的人自称是警察", time: "约 3 分钟", place: "中国大陆", temperature: "立即核实",
+    id: "fakepolice", number: "005", category: "反诈骗", title: "来电的人自称是警察", time: "约 5 分钟", place: "中国大陆", temperature: "立即核实",
     opening: "陌生号码打来电话。对方自称警察，准确说出你的姓名，称你的银行卡涉及案件，要求你不要告诉家人，并马上下载一个‘办案软件’。",
     first: { prompt: "你先怎么做？", options: [
       { id: "verify", text: "挂断来电，通过 110 或当地公安机关公开渠道核实", consequence: "你切断了对方继续施压的通道。对方掌握姓名，并不能证明其身份；核实应通过你主动找到的官方渠道。", gained: ["独立核实对方身份", "没有安装陌生软件"], missed: [] },

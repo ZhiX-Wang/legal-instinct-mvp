@@ -21,3 +21,14 @@
 .timeline span:not(.photo){grid-row:span 2}
 @media(max-width:1020px){.intro-grid{grid-template-columns:minmax(0,1fr) 190px;gap:24px}.intro-photo{width:190px}}
 @media(max-width:760px){.scene-visual{height:235px}.scene-visual>.hero-photo{width:205px;box-shadow:9px 9px 0 #0c192b}.scene-visual>.scene-time{font-size:19px;bottom:1px}.scene-row{grid-template-columns:34px 58px 1fr 16px;gap:8px}.row-photo{width:56px}.row-main strong{font-size:19px}.intro-grid{display:block}.intro-photo{width:min(100%,320px);margin:0 0 34px}.option{grid-template-columns:66px 19px 1fr 16px;gap:8px;min-height:82px;padding:9px 2px}.option-photo{width:66px}.option-key{font-size:12px}.result-photo{width:min(100%,270px)}.timeline>div{grid-template-columns:60px 24px 1fr;gap:0 8px}.timeline-photo{width:56px}.timeline strong{font-size:13px}}
+.outcome-card{display:grid;grid-template-columns:160px minmax(0,1fr);gap:24px;align-items:center;background:#172a3c;color:#fff;padding:22px;margin:28px 0 16px;border-left:5px solid var(--gold)}
+.outcome-photo{width:160px}
+.outcome-kicker{font-size:11px;letter-spacing:.18em;color:#e7bc72}
+.outcome-card h2{font-family:"Songti SC","STSong",serif;font-size:30px;line-height:1.35;margin:8px 0 12px;color:#fff}
+.outcome-card p{font-size:14px;line-height:1.8;color:#e2eaed;margin:0}
+.case-facts,.case-official{padding:17px 20px;margin-bottom:10px;background:#e9eeed;border-left:3px solid #5e8a88}
+.case-official{background:#f2eae1;border-left-color:#b77445}
+.case-facts strong,.case-official strong{font-size:12px;letter-spacing:.13em;color:#4c6876}
+.case-facts p,.case-official p{font-size:14px;line-height:1.8;color:#405968;margin:6px 0 0}
+.route-title{font-family:"Songti SC","STSong",serif;font-size:27px;margin:36px 0 0}
+@media(max-width:760px){.outcome-card{grid-template-columns:88px 1fr;gap:13px;padding:14px}.outcome-photo{width:88px}.outcome-card h2{font-size:23px}.outcome-card p{font-size:12px}.case-facts,.case-official{padding:15px}}
